@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: space-between;
 }
-
+ 
 .top {
     height: 75px;
     width: 400px;
@@ -48,4 +48,20 @@ button {
     text-align: center;
     margin-top: 20px;
  
+}
+
+.number {
+    background-color: gray;
+}
+
+.operator {
+    background-color: orangered;
+}
+
+.clear {
+    background-color: red;
+}
+
+.equals {
+    background-color: green;
 }
