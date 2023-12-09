@@ -42,6 +42,15 @@ buttons.forEach((button) => {
                 display.textContent = 0;
                 numbers = []
             }
+        } else if (e.target.className == "equals") {
+            if (!numbers[0] || !operator) {
+                return
+            } else {
+                numbers[1] = Number(display.textContent)
+                operate(operator)
+                numbers[0] = Number(display.textContent)
+                numbers[1] = 0;
+            }
         }
     })
 })
