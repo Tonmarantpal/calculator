@@ -26,6 +26,8 @@ buttons.forEach((button) => {
                 numbers[0] = Number(display.textContent)
                 operator = e.target.textContent
                 display.textContent = "";
+            } else if(numbers[0] && display.textContent == numbers[0]) {
+                operator = e.target.textContent
             } else {
                 numbers[1] = Number(display.textContent)
                 operate(operator)
