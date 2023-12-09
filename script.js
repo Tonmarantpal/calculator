@@ -35,6 +35,13 @@ buttons.forEach((button) => {
                 numbers[0] = Number(display.textContent)
                 numbers[1] = 0;
             }
+        } else if (e.target.className == "clear") {
+            if (e.target.textContent == "CE") {
+                display.textContent = display.textContent.slice(0, -1)
+            } else {
+                display.textContent = 0;
+                numbers = []
+            }
         }
     })
 })
